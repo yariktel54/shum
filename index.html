@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ШУМ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo-link" aria-label="ШУМ">
+        <div class="logo-placeholder" data-i18n="logo_placeholder">Лого</div>
+      </a>
+
+      <div class="header-contacts">
+        <div class="lang-switch" aria-label="Language switcher">
+          <a href="?lang=ua" class="lang-link" id="lang-ua">UA</a>
+          <a href="?lang=en" class="lang-link" id="lang-en">EN</a>
+        </div>
+
+        <a class="phone-chip" href="tel:+380000000000" data-i18n="phone_display">+38 (0XX) XXX-XX-XX</a>
+
+        <a class="social-link" href="https://instagram.com/shum_ua" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2.5" y="2.5" width="19" height="19" rx="5" ry="5"></rect>
+            <path d="M16 11.37a4 4 0 1 1-1.17-2.83A4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+
+        <a class="social-link" href="https://t.me/shum_ua" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.5 3.5 2.9 10.7c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.9 6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.7-2.6 5.6 4.1c1 .6 1.8.3 2.1-1l3.4-16c.4-1.6-.6-2.3-1.8-1.8Z"></path>
+            <path d="m7.5 13.5 10-6.5"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-top">
+      <div class="container hero-grid">
+        <div class="hero-text card card-gradient-main">
+          <h1 data-i18n="hero_title">ШУМ — простір молодих ідей, дії та спільноти</h1>
+          <p data-i18n="hero_text">
+            Сучасний адаптивний сайт для молодіжної організації: живий, відкритий, з місцем для фото,
+            логотипа, реальних подій та контактів, які легко знайти з першого погляду.
+          </p>
+        </div>
+
+        <div class="hero-photos">
+          <div class="photo-placeholder photo-main" data-i18n="hero_photo_main">Головне фото</div>
+          <div class="photo-placeholder photo-blue" data-i18n="hero_photo_event">Фото події</div>
+          <div class="photo-placeholder photo-green" data-i18n="hero_photo_team">Фото команди</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <article class="card card-dark">
+          <div class="section-label section-label-light" data-i18n="about_label">Про ШУМ</div>
+          <h2 data-i18n="about_title">Шкільна Українська Молодь — організація, яка об’єднує молодь навколо розвитку, участі та взаємопідтримки</h2>
+          <p data-i18n="about_text">
+            Тут можна коротко й виразно розповісти, хто ви, для кого працюєте, яку маєте мету,
+            чим відрізняєтесь і яку атмосферу створює ваша спільнота.
+          </p>
+        </article>
+
+        <div class="about-side">
+          <div class="photo-placeholder photo-yellow about-photo" data-i18n="about_photo">Фото / відео організації</div>
+
+          <div class="about-cards">
+            <article class="card card-white small-info-card">
+              <div class="section-label" data-i18n="community_label">Спільнота</div>
+              <h3 data-i18n="community_title">Живе середовище</h3>
+              <p data-i18n="community_text">Простір, у якому легко знайти однодумців, команду та відчути себе частиною чогось справжнього.</p>
+            </article>
+
+            <article class="card card-mint small-info-card">
+              <div class="section-label" data-i18n="initiative_label">Ініціативність</div>
+              <h3 data-i18n="initiative_title">Не лише участь</h3>
+              <p data-i18n="initiative_text">Можливість створювати власні формати, розвивати ідеї та пробувати себе в реальних справах.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container leadership-wrap">
+        <div class="section-heading">
+          <div class="section-label" data-i18n="leadership_label">Керівництво</div>
+          <h2 data-i18n="leadership_title">Люди, які ведуть спільноту та формують її напрям</h2>
+        </div>
+
+        <div class="leadership-grid">
+          <article class="card leader-card leader-purple">
+            <div class="leader-card-inner">
+              <div class="photo-placeholder leader-photo" data-i18n="president_photo">Фото: Президент</div>
+              <div>
+                <div class="role-text" data-i18n="president_role">Президент</div>
+                <h3 data-i18n="president_name">Ім’я Прізвище</h3>
+                <p data-i18n="president_text">Короткий опис ролі, напряму діяльності або кілька слів про людину.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card leader-card leader-green">
+            <div class="leader-card-inner">
+              <div class="photo-placeholder leader-photo" data-i18n="methodist_photo">Фото: Методист</div>
+              <div>
+                <div class="role-text" data-i18n="methodist_role">Методист</div>
+                <h3 data-i18n="methodist_name">Ім’я Прізвище</h3>
+                <p data-i18n="methodist_text">Короткий опис ролі, відповідальності та внеску в роботу організації.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <article class="card card-white team-card">
+          <div class="team-card-inner">
+            <div class="photo-placeholder team-photo" data-i18n="team_photo">Загальне фото команди</div>
+            <div>
+              <div class="role-text" data-i18n="team_label">Команда ШУМ</div>
+              <h3 data-i18n="team_title">У ШУМ входять активні молоді люди, зокрема представники шкільних самоврядувань</h3>
+              <p data-i18n="team_text">
+                Тут доречно показати загальне фото команди або активу організації. Такий блок підкреслює,
+                що ШУМ — це не лише керівництво, а ширше середовище активної молоді, яка бере участь у справах,
+                ініціативах і розвитку спільноти.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="activity" class="section section-compact-top">
+      <div class="container">
+        <div class="section-heading section-heading-narrow">
+          <div class="section-label" data-i18n="activity_label">Напрями та життя організації</div>
+          <h2 data-i18n="activity_title">Активності, події й формати, які можна показувати в одному живому блоці</h2>
+        </div>
+
+        <div class="activity-grid">
+          <article class="card activity-card" style="background:#cfe2ff;">
+            <div class="card-type" data-i18n="card1_type">Напрям</div>
+            <div class="photo-placeholder photo-soft" data-i18n="card1_photo">Фото ініціативи</div>
+            <h3 data-i18n="card1_title">Освітні ініціативи</h3>
+            <p data-i18n="card1_text">Воркшопи, зустрічі, мінікурси та простір для розвитку практичних навичок.</p>
+          </article>
+
+          <article class="card activity-card" style="background:#c9f3e4;">
+            <div class="card-type" data-i18n="card2_type">Подія</div>
+            <div class="photo-placeholder photo-soft" data-i18n="card2_photo">Фото зустрічі</div>
+            <h3 data-i18n="card2_title">Зустріч спільноти</h3>
+            <p data-i18n="card2_text">Неформальний формат знайомства, спілкування, командної роботи та нових ідей.</p>
+          </article>
+
+          <article class="card activity-card" style="background:#fff0a8;">
+            <div class="card-type" data-i18n="card3_type">Напрям</div>
+            <div class="photo-placeholder photo-soft" data-i18n="card3_photo">Фото творчості</div>
+            <h3 data-i18n="card3_title">Творчі події</h3>
+            <p data-i18n="card3_text">Конкурси, тематичні формати, креатив і можливість проявити себе.</p>
+          </article>
+
+          <article class="card activity-card" style="background:#e4ccff;">
+            <div class="card-type" data-i18n="card4_type">Подія</div>
+            <div class="photo-placeholder photo-soft" data-i18n="card4_photo">Фото події</div>
+            <h3 data-i18n="card4_title">Освітній день</h3>
+            <p data-i18n="card4_text">Практичні активності, обмін досвідом і відчуття живої молодіжної спільноти.</p>
+          </article>
+
+          <article class="card activity-card" style="background:#c8efe3;">
+            <div class="card-type" data-i18n="card5_type">Напрям</div>
+            <div class="photo-placeholder photo-soft" data-i18n="card5_photo">Фото волонтерства</div>
+            <h3 data-i18n="card5_title">Волонтерство</h3>
+            <p data-i18n="card5_text">Корисні ініціативи, взаємопідтримка й справи, у яких можна реально брати участь.</p>
+          </article>
+
+          <article class="card activity-card" style="background:#ffd8b2;">
+            <div class="card-type" data-i18n="card6_type">Подія</div>
+            <div class="photo-placeholder photo-soft" data-i18n="card6_photo">Фото акції</div>
+            <h3 data-i18n="card6_title">Локальна акція</h3>
+            <p data-i18n="card6_text">Приклад блоку, де зручно показувати анонси, репортажі або результати подій.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container why-grid">
+        <article class="card card-gradient-soft why-main">
+          <h2 data-i18n="why_title">Живий, енергійний і водночас простий для подальшого редагування сайт</h2>
+          <div class="benefits-list">
+            <div class="benefit-item" data-i18n="benefit1">однодумці, середовище й відчуття спільності</div>
+            <div class="benefit-item" data-i18n="benefit2">можливість долучатися до реальних ініціатив</div>
+            <div class="benefit-item" data-i18n="benefit3">місце для ідей, розвитку та молодіжної енергії</div>
+            <div class="benefit-item" data-i18n="benefit4">структура, яку легко наповнювати поступово</div>
+          </div>
+        </article>
+
+        <div class="why-side">
+          <article class="card number-card number-yellow">
+            <div class="number-mark">01</div>
+            <p data-i18n="why_card1">Більше повітря, красивіший шрифт у заголовках і кольори, що вже мають молодіжний імпульс.</p>
+          </article>
+
+          <article class="card number-card number-blue">
+            <div class="number-mark">02</div>
+            <p data-i18n="why_card2">Можна спокійно вставити реальні фото, логотип і тексти без повної переробки структури.</p>
+          </article>
+
+          <div class="photo-placeholder photo-green photo-wide" data-i18n="why_photo">Фото атмосфери / репортаж</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="section section-compact-top">
+      <div class="container">
+        <article class="card partners-card">
+          <div class="section-heading section-heading-narrow partners-heading">
+            <div class="section-label section-label-light" data-i18n="partners_label">Партнери та спонсори</div>
+            <h2 data-i18n="partners_title">Блок під майбутні логотипи вже готовий</h2>
+            <p data-i18n="partners_text">
+              Поки тут можуть бути стильні заглушки. Коли з’являться партнери, достатньо замінити їх на реальні логотипи.
+            </p>
+          </div>
+
+          <div class="partners-grid">
+            <div class="partner-item" data-i18n="partner_placeholder">Ваш логотип</div>
+            <div class="partner-item" data-i18n="partner_placeholder">Ваш логотип</div>
+            <div class="partner-item" data-i18n="partner_placeholder">Ваш логотип</div>
+            <div class="partner-item" data-i18n="partner_placeholder">Ваш логотип</div>
+            <div class="partner-item" data-i18n="partner_placeholder">Ваш логотип</div>
+            <div class="partner-item" data-i18n="partner_placeholder">Ваш логотип</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container contacts-grid">
+        <article class="card card-gradient-contacts contacts-info">
+          <div class="section-label" data-i18n="contacts_label">Контакти</div>
+          <h2 data-i18n="contacts_title">Нас легко знайти без форми й зайвих дій</h2>
+
+          <div class="contacts-stack">
+            <div class="contact-box">
+              <div class="contact-label" data-i18n="contact_person_label">Контактна особа</div>
+              <div class="contact-value" data-i18n="contact_person_value">ПІБ контактної особи</div>
+            </div>
+
+            <div class="contact-box">
+              <div class="contact-label" data-i18n="contact_phone_label">Телефон</div>
+              <div class="contact-value contact-value-inline">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.4 2.1L8 9.8a16 16 0 0 0 6.2 6.2l1.4-1.3a2 2 0 0 1 2.1-.4c.8.4 1.7.6 2.6.7A2 2 0 0 1 22 16.9Z"></path>
+                </svg>
+                <span data-i18n="phone_display">+38 (0XX) XXX-XX-XX</span>
+              </div>
+            </div>
+
+            <div class="contacts-social-grid">
+              <a class="contact-box social-box" href="https://instagram.com/shum_ua">
+                <div class="social-box-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2.5" y="2.5" width="19" height="19" rx="5" ry="5"></rect>
+                    <path d="M16 11.37a4 4 0 1 1-1.17-2.83A4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  <div>
+                    <div class="contact-label">Instagram</div>
+                    <div class="contact-value">@shum_ua</div>
+                  </div>
+                </div>
+              </a>
+
+              <a class="contact-box social-box" href="https://t.me/shum_ua">
+                <div class="social-box-row">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21.5 3.5 2.9 10.7c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.9 6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.7-2.6 5.6 4.1c1 .6 1.8.3 2.1-1l3.4-16c.4-1.6-.6-2.3-1.8-1.8Z"></path>
+                    <path d="m7.5 13.5 10-6.5"></path>
+                  </svg>
+                  <div>
+                    <div class="contact-label">Telegram</div>
+                    <div class="contact-value">@shum_ua</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <div class="contacts-photos">
+          <div class="photo-placeholder photo-purple photo-main-contact" data-i18n="contacts_photo_main">Фото команди / офлайн зустрічі</div>
+          <div class="photo-placeholder photo-green" data-i18n="contacts_photo_1">Фото діяльності</div>
+          <div class="photo-placeholder photo-orange" data-i18n="contacts_photo_2">Фото спільноти</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo-placeholder footer-logo" data-i18n="logo_placeholder">Лого</div>
+        <div>
+          <div class="footer-name">ШУМ</div>
+          <div class="footer-text" data-i18n="footer_text">Більш живий і молодіжний адаптивний макет.</div>
+        </div>
+      </div>
+
+      <div class="footer-contacts">
+        <a class="phone-chip" href="tel:+380000000000" data-i18n="phone_display">+38 (0XX) XXX-XX-XX</a>
+
+        <a class="social-link" href="https://instagram.com/shum_ua" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2.5" y="2.5" width="19" height="19" rx="5" ry="5"></rect>
+            <path d="M16 11.37a4 4 0 1 1-1.17-2.83A4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+
+        <a class="social-link" href="https://t.me/shum_ua" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.5 3.5 2.9 10.7c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.9 6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.7-2.6 5.6 4.1c1 .6 1.8.3 2.1-1l3.4-16c.4-1.6-.6-2.3-1.8-1.8Z"></path>
+            <path d="m7.5 13.5 10-6.5"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function getLangFromUrl() {
+        var params = new URLSearchParams(window.location.search);
+        var lang = params.get('lang');
+        return lang === 'en' ? 'en' : 'ua';
+      }
+
+      function setActiveLanguage(lang) {
+        var uaLink = document.getElementById('lang-ua');
+        var enLink = document.getElementById('lang-en');
+        if (uaLink && enLink) {
+          uaLink.classList.toggle('active', lang === 'ua');
+          enLink.classList.toggle('active', lang === 'en');
+        }
+      }
+
+      function applyLanguage(dict, lang) {
+        document.documentElement.lang = lang === 'en' ? 'en' : 'uk';
+
+        document.querySelectorAll('[data-i18n]').forEach(function (node) {
+          var key = node.getAttribute('data-i18n');
+          if (Object.prototype.hasOwnProperty.call(dict, key)) {
+            node.textContent = dict[key];
+          }
+        });
+
+        setActiveLanguage(lang);
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var lang = getLangFromUrl();
+
+        fetch('texts.json')
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error('Unable to load texts.json');
+            }
+            return response.json();
+          })
+          .then(function (data) {
+            var dict = data[lang] || data.ua || {};
+            applyLanguage(dict, lang);
+          })
+          .catch(function (error) {
+            console.error(error);
+            setActiveLanguage(lang);
+          });
+      });
+    })();
+  </script>
+</body>
+</html>

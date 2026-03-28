@@ -11,7 +11,3 @@ How it works:
   ?lang=ua
   ?lang=en
 - Texts are loaded from texts.json
-
-Important:
-If you open the file directly from disk (file://), some browsers may block fetch('texts.json').
-For normal work, place the files on a server/hosting or run a local static server.

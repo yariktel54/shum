@@ -1,0 +1,130 @@
+.team {
+  padding-top: 268px;
+  /* padding-bottom: 156px; */
+}
+
+.team-box {
+  width: calc(100% - 305px);
+  max-width: 1615px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.team-title {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+  margin-left: 0;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.team-person {
+  min-width: 0;
+  display: flex;
+  padding-top: 38px;
+  padding-right: 60px;
+  padding-bottom: 38px;
+  padding-left: 60px;
+  background: #273e20;
+  border-radius: 30px;
+}
+
+.team-person-photo {
+  width: 190px;
+  height: 244px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #d9d9d9;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.team-person-copy {
+  margin-left: 28px;
+  min-width: 0;
+}
+
+.team-role {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.team-name {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.team-text {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.28;
+}
+
+.team-wide {
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  padding-top: 38px;
+  padding-right: 60px;
+  padding-bottom: 38px;
+  padding-left: 60px;
+  background: #273e20;
+  border-radius: 30px;
+}
+
+.team-wide-photo {
+  width: 540px;
+  height: 320px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #d9d9d9;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.team-wide-copy {
+  margin-left: 28px;
+  min-width: 0;
+}
+
+.team-wide-name {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.team-wide-text {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.28;
+}

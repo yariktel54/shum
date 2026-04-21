@@ -1,246 +1,373 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ШУМ</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="header">
-    <div class="header-inner">
-      <a class="logo" href="#about">Лого</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ШУМ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-box">
+        <a class="logo" href="#about">Лого</a>
 
-      <nav class="nav desktop-nav" aria-label="Головне меню">
-        <a class="nav-link active" href="#about">О нас</a>
-        <a class="nav-link" href="#projects">Наші проєкти</a>
-        <a class="nav-link" href="#team">Команда</a>
-        <a class="nav-link" href="#contacts">Контакти</a>
-      </nav>
+        <nav class="nav desktop-nav" aria-label="Головне меню">
+          <a class="nav-link active-link" href="#about">О нас</a>
+          <a class="nav-link" href="#projects">Наші проєкти</a>
+          <a class="nav-link" href="#team">Команда</a>
+          <a class="nav-link" href="#contacts">Контакти</a>
+        </nav>
 
-      <div class="social desktop-social" aria-label="Соціальні мережі">
-        <a href="#" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-            <circle cx="12" cy="12" r="4.2"></circle>
-            <circle cx="17.2" cy="6.8" r="1"></circle>
-          </svg>
-        </a>
-        <a href="#" aria-label="Telegram">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M21 4L3.8 10.6c-.8.3-.8 1.5 0 1.8l4.4 1.5 1.6 5c.2.7 1.1.9 1.6.3l2.6-3.2 4.5 3.4c.7.5 1.6.1 1.8-.8L21 4Z"></path>
-            <path d="M8.4 13.9 18.9 6.6"></path>
-          </svg>
-        </a>
-        <a href="#" aria-label="TikTok">
-          <svg class="tiktok" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M14.8 3c.3 2 1.5 3.3 3.5 3.7v3a7 7 0 0 1-3.2-.8v5.7a5.6 5.6 0 1 1-5-5.5v3.2a2.5 2.5 0 1 0 1.9 2.4V3h2.8Z"></path>
-          </svg>
-        </a>
-      </div>
-
-      <button class="menu-btn" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu-panel">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <div class="menu-panel" id="menu-panel">
-      <nav class="nav mobile-nav" aria-label="Мобільне меню">
-        <a class="nav-link active" href="#about">О нас</a>
-        <a class="nav-link" href="#projects">Наші проєкти</a>
-        <a class="nav-link" href="#team">Команда</a>
-        <a class="nav-link" href="#contacts">Контакти</a>
-      </nav>
-
-      <div class="social mobile-social" aria-label="Соціальні мережі">
-        <a href="#" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-            <circle cx="12" cy="12" r="4.2"></circle>
-            <circle cx="17.2" cy="6.8" r="1"></circle>
-          </svg>
-        </a>
-        <a href="#" aria-label="Telegram">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M21 4L3.8 10.6c-.8.3-.8 1.5 0 1.8l4.4 1.5 1.6 5c.2.7 1.1.9 1.6.3l2.6-3.2 4.5 3.4c.7.5 1.6.1 1.8-.8L21 4Z"></path>
-            <path d="M8.4 13.9 18.9 6.6"></path>
-          </svg>
-        </a>
-        <a href="#" aria-label="TikTok">
-          <svg class="tiktok" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M14.8 3c.3 2 1.5 3.3 3.5 3.7v3a7 7 0 0 1-3.2-.8v5.7a5.6 5.6 0 1 1-5-5.5v3.2a2.5 2.5 0 1 0 1.9 2.4V3h2.8Z"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main class="page">
-    <section class="section about" id="about">
-      <div class="wrap about-wrap">
-        <div class="about-text">
-          <h1>ШУМ — це невід’ємна частина молоді</h1>
-          <p>Коротко чим ми займаємось. Тут можна просто замінити текст на реальний опис організації.</p>
+        <div class="social desktop-social" aria-label="Соціальні мережі">
+          <a
+            class="social-link"
+            href="https://instagram.com/shum"
+            aria-label="Instagram"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4.2"></circle>
+              <circle cx="17.2" cy="6.8" r="1"></circle>
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="https://facebook.com/shum"
+            aria-label="Facebook"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M13.3 20v-6.5h2.2l.4-2.7h-2.6V9.1c0-.8.3-1.4 1.4-1.4H16V5.4c-.4-.1-1.1-.2-2-.2-2.3 0-3.7 1.4-3.7 4v1.6H8v2.7h2.3V20h3Z"
+              ></path>
+            </svg>
+          </a>
+          <a class="social-link" href="https://t.me/shum" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M21 4L3.8 10.6c-.8.3-.8 1.5 0 1.8l4.4 1.5 1.6 5c.2.7 1.1.9 1.6.3l2.6-3.2 4.5 3.4c.7.5 1.6.1 1.8-.8L21 4Z"
+              ></path>
+              <path d="M8.4 13.9 18.9 6.6"></path>
+            </svg>
+          </a>
         </div>
 
-        <div class="about-photos" aria-label="Фото організації">
-          <div class="image-box tall rotate-left">
-            <img src="assets/images/about-1.svg" alt="Фото організації 1" />
+        <button
+          class="burger"
+          type="button"
+          aria-label="Відкрити меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="burger-line burger-line-top"></span>
+          <span class="burger-line burger-line-middle"></span>
+          <span class="burger-line burger-line-bottom"></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-nav" aria-label="Мобільне меню">
+          <a class="mobile-link" href="#about">О нас</a>
+          <a class="mobile-link" href="#projects">Наші проєкти</a>
+          <a class="mobile-link" href="#team">Команда</a>
+          <a class="mobile-link" href="#contacts">Контакти</a>
+        </nav>
+
+        <div class="mobile-social" aria-label="Соціальні мережі">
+          <a
+            class="mobile-social-link"
+            href="https://instagram.com/shum"
+            aria-label="Instagram"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4.2"></circle>
+              <circle cx="17.2" cy="6.8" r="1"></circle>
+            </svg>
+          </a>
+          <a
+            class="mobile-social-link"
+            href="https://facebook.com/shum"
+            aria-label="Facebook"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M13.3 20v-6.5h2.2l.4-2.7h-2.6V9.1c0-.8.3-1.4 1.4-1.4H16V5.4c-.4-.1-1.1-.2-2-.2-2.3 0-3.7 1.4-3.7 4v1.6H8v2.7h2.3V20h3Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="mobile-social-link"
+            href="https://t.me/shum"
+            aria-label="Telegram"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M21 4L3.8 10.6c-.8.3-.8 1.5 0 1.8l4.4 1.5 1.6 5c.2.7 1.1.9 1.6.3l2.6-3.2 4.5 3.4c.7.5 1.6.1 1.8-.8L21 4Z"
+              ></path>
+              <path d="M8.4 13.9 18.9 6.6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="about" id="about">
+        <div class="about-box">
+          <div class="about-copy">
+            <h1 class="about-title">ШУМ — це невід’ємна частина молоді</h1>
+            <p class="about-text">
+              Коротко чим ми займаємось. Тут можна просто замінити текст на
+              реальний опис організації.
+            </p>
           </div>
-          <div class="image-box tall rotate-right">
-            <img src="assets/images/about-2.svg" alt="Фото організації 2" />
+
+          <div class="about-visual" aria-label="Фото організації">
+            <div class="about-photo about-photo-left">
+              <img src="assets/images/about-1.svg" alt="Фото організації 1" />
+            </div>
+            <div class="about-photo about-photo-right">
+              <img src="assets/images/about-2.svg" alt="Фото організації 2" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section projects" id="projects">
-      <div class="wrap">
-        <div class="section-head projects-head">
-          <h2>Наші проєкти</h2>
-          <p>Цей блок прокручується горизонтально колесом миші або свайпом.</p>
+      <section class="projects" id="projects">
+        <div class="projects-box">
+          <!--<h2 class="projects-title">Наші проєкти</h2>-->
+
+          <div class="projects-scroll" data-project-scroll>
+            <div class="projects-track">
+              <article class="project-card">
+                <div class="project-media">
+                  <a class="project-photo project-photo-top" href="#contacts">
+                    <img
+                      src="assets/images/project-top.svg"
+                      alt="Фото проєкту 1"
+                    />
+                  </a>
+                  <a
+                    class="project-photo project-photo-bottom"
+                    href="#contacts"
+                  >
+                    <img
+                      src="assets/images/project-bottom.svg"
+                      alt="Фото проєкту 2"
+                    />
+                  </a>
+                </div>
+
+                <div class="project-copy">
+                  <a class="project-link" href="#contacts">Назва проєкту</a>
+                  <p class="project-lead">Учасники проєкту:</p>
+                  <p class="project-members">
+                    ПІБ, школа<br />ПІБ, школа<br />ПІБ, школа
+                  </p>
+                  <p class="project-text">Опис</p>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-media">
+                  <a class="project-photo project-photo-top" href="#contacts">
+                    <img
+                      src="assets/images/project-top.svg"
+                      alt="Фото проєкту 3"
+                    />
+                  </a>
+                  <a
+                    class="project-photo project-photo-bottom"
+                    href="#contacts"
+                  >
+                    <img
+                      src="assets/images/project-bottom.svg"
+                      alt="Фото проєкту 4"
+                    />
+                  </a>
+                </div>
+
+                <div class="project-copy">
+                  <a class="project-link" href="#contacts">Ще один проєкт</a>
+                  <p class="project-lead">Учасники проєкту:</p>
+                  <p class="project-members">
+                    ПІБ, школа<br />ПІБ, школа<br />ПІБ, школа
+                  </p>
+                  <p class="project-text">Опис</p>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-media">
+                  <a class="project-photo project-photo-top" href="#contacts">
+                    <img
+                      src="assets/images/project-top.svg"
+                      alt="Фото проєкту 5"
+                    />
+                  </a>
+                  <a
+                    class="project-photo project-photo-bottom"
+                    href="#contacts"
+                  >
+                    <img
+                      src="assets/images/project-bottom.svg"
+                      alt="Фото проєкту 6"
+                    />
+                  </a>
+                </div>
+
+                <div class="project-copy">
+                  <a class="project-link" href="#contacts">Майбутній проєкт</a>
+                  <p class="project-lead">Учасники проєкту:</p>
+                  <p class="project-members">
+                    ПІБ, школа<br />ПІБ, школа<br />ПІБ, школа
+                  </p>
+                  <p class="project-text">Опис</p>
+                </div>
+              </article>
+
+              <!--<article class="project-card project-card-cta">
+                <a class="project-cta-link" href="#contacts">
+                  <span class="project-cta-title">Хочеш взяти участь?</span>
+                  <span class="project-cta-text">Натискай і напиши нам</span>
+                </a>
+              </article>-->
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="projects-edge">
-        <div class="projects-scroll" data-horizontal-scroll>
-          <div class="projects-track">
-            <article class="project-card">
-              <div class="project-images">
-                <div class="image-box wide">
-                  <img src="assets/images/project-top.svg" alt="Фото проєкту 1" />
-                </div>
-                <div class="image-box wide">
-                  <img src="assets/images/project-bottom.svg" alt="Фото проєкту 2" />
-                </div>
+      <section class="team" id="team">
+        <div class="team-box">
+          <!--<h2 class="team-title">Команда</h2>-->
+
+          <div class="team-grid">
+            <article class="team-person">
+              <div class="team-person-photo">
+                <img src="assets/images/president.svg" alt="Фото президента" />
               </div>
 
-              <div class="project-text">
-                <h3>Назва проєкту</h3>
-                <p class="lead">Учасники проєкту:</p>
-                <ul>
-                  <li>ПІБ, школа</li>
-                  <li>ПІБ, школа</li>
-                  <li>ПІБ, школа</li>
-                </ul>
-                <p>Тут можна додати опис проєкту, мету, результати, ключові деталі або коротку історію.</p>
+              <div class="team-person-copy">
+                <p class="team-role">Президент</p>
+                <h3 class="team-name">ПІБ</h3>
+                <p class="team-text">Короткий опис про людину.</p>
               </div>
             </article>
 
-            <article class="project-card">
-              <div class="project-images">
-                <div class="image-box wide">
-                  <img src="assets/images/project-top.svg" alt="Фото проєкту 3" />
-                </div>
-                <div class="image-box wide">
-                  <img src="assets/images/project-bottom.svg" alt="Фото проєкту 4" />
-                </div>
+            <article class="team-person">
+              <div class="team-person-photo">
+                <img src="assets/images/methodist.svg" alt="Фото методиста" />
               </div>
 
-              <div class="project-text">
-                <h3>Ще один проєкт</h3>
-                <p class="lead">Учасники проєкту:</p>
-                <ul>
-                  <li>ПІБ, школа</li>
-                  <li>ПІБ, школа</li>
-                  <li>ПІБ, школа</li>
-                </ul>
-                <p>Другу картку можна легко замінити на реальний проєкт або просто додати нові картки в кінець доріжки.</p>
+              <div class="team-person-copy">
+                <p class="team-role">Методист</p>
+                <h3 class="team-name">ПІБ</h3>
+                <p class="team-text">Короткий опис про людину.</p>
               </div>
             </article>
 
-            <article class="project-card">
-              <div class="project-images">
-                <div class="image-box wide">
-                  <img src="assets/images/project-top.svg" alt="Фото проєкту 5" />
-                </div>
-                <div class="image-box wide">
-                  <img src="assets/images/project-bottom.svg" alt="Фото проєкту 6" />
-                </div>
+            <article class="team-wide">
+              <div class="team-wide-photo">
+                <img
+                  src="assets/images/team-photo.svg"
+                  alt="Загальне фото команди"
+                />
               </div>
 
-              <div class="project-text">
-                <h3>Майбутній проєкт</h3>
-                <p class="lead">Учасники проєкту:</p>
-                <ul>
-                  <li>ПІБ, школа</li>
-                  <li>ПІБ, школа</li>
-                  <li>ПІБ, школа</li>
-                </ul>
-                <p>Можна дублювати цю картку стільки разів, скільки потрібно. Горизонтальний скрол залишиться робочим.</p>
+              <div class="team-wide-copy">
+                <p class="team-role">Команда ШУМ</p>
+                <h3 class="team-wide-name">
+                  У ШУМ входять активні молоді люди, зокрема представники
+                  шкільних самоврядувань
+                </h3>
+                <p class="team-wide-text">
+                  Тут можна дати короткий опис команди, її цінностей, напряму
+                  роботи та ролі в організації.
+                </p>
               </div>
             </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section team" id="team">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Команда</h2>
-        </div>
+      <section class="contacts" id="contacts">
+        <div class="contacts-box">
+          <h2 class="contacts-title">Зв’яжіться з нами</h2>
 
-        <div class="team-grid">
-          <article class="person-card">
-            <div class="image-box person-photo">
-              <img src="assets/images/president.svg" alt="Фото президента" />
-            </div>
-            <div>
-              <span class="role">Президент</span>
-              <h3>ПІБ</h3>
-              <p>Короткий опис про людину.</p>
-            </div>
-          </article>
+          <div class="contacts-panel">
+            <div class="contacts-copy">
+              <!--<div class="contacts-callout">
+                <p class="contacts-callout-title">Хочеш до нас?</p>
+                <p class="contacts-callout-text">
+                  Для школярів, які хочуть долучитися, написати про свою ідею
+                  або взяти участь у проєктах.
+                </p>
+              </div>-->
 
-          <article class="person-card">
-            <div class="image-box person-photo">
-              <img src="assets/images/methodist.svg" alt="Фото методиста" />
-            </div>
-            <div>
-              <span class="role">Методист</span>
-              <h3>ПІБ</h3>
-              <p>Короткий опис про людину.</p>
-            </div>
-          </article>
+              <!--<div class="contacts-callout contacts-callout-second">
+                <p class="contacts-callout-title">Хочеш щось зробити разом?</p>
+                <p class="contacts-callout-text">
+                  Для організацій, партнерів і тих, хто хоче запропонувати
+                  спільний проєкт або подію.
+                </p>
+              </div>-->
 
-          <section class="team-card">
-            <div class="image-box team-photo">
-              <img src="assets/images/team-photo.svg" alt="Загальне фото команди" />
+              <div class="contacts-list">
+                <p class="contact-line">
+                  <span class="contact-label">Insta:</span>
+                  <a class="contact-link" href="https://instagram.com/shum"
+                    >@shum</a
+                  >
+                </p>
+                <p class="contact-line">
+                  <span class="contact-label">Facebook:</span>
+                  <a class="contact-link" href="https://facebook.com/shum"
+                    >@shum</a
+                  >
+                </p>
+                <p class="contact-line">
+                  <span class="contact-label">Telegram:</span>
+                  <a class="contact-link" href="https://t.me/shum">@shum</a>
+                </p>
+                <p class="contact-line">
+                  <span class="contact-label">Пошта:</span>
+                  <a class="contact-link" href="mailto:shum123@gmail.com"
+                    >shum123@gmail.com</a
+                  >
+                </p>
+                <p class="contact-line">
+                  <span class="contact-label">Номер телефону:</span>
+                  <a class="contact-link" href="tel:+380000000000"
+                    >+380ххххххххх</a
+                  >
+                </p>
+                <p class="contact-person">Михайло Михайлович Михайличенко</p>
+              </div>
             </div>
-            <div>
-              <span class="role">Команда ШУМ</span>
-              <h3>У ШУМ входять активні молоді люди, зокрема представники шкільних самоврядувань</h3>
-              <p>Тут можна дати короткий опис команди, її цінностей, напряму роботи та ролі в організації.</p>
-            </div>
-          </section>
-        </div>
-      </div>
-    </section>
 
-    <section class="section contacts" id="contacts">
-      <div class="wrap contacts-wrap">
-        <div class="contacts-text">
-          <h2>Зв’яжіться з нами</h2>
-          <div class="contact-list">
-            <p><strong>Instagram:</strong><br><a href="#">@shum</a></p>
-            <p><strong>Facebook:</strong><br><a href="#">@shum</a></p>
-            <p><strong>Telegram:</strong><br><a href="#">@shum</a></p>
-            <p><strong>Пошта:</strong><br><a href="mailto:shum123@gmail.com">shum123@gmail.com</a></p>
-            <p><strong>Номер телефону:</strong><br><a href="tel:+380000000000">+380xxxxxxxxx</a></p>
-            <p>Михайло Михайлович Михайличенко</p>
+            <div class="contacts-photo">
+              <img
+                src="assets/images/contact.svg"
+                alt="Фото або логотип для контактів"
+              />
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="image-box contact-photo">
-          <img src="assets/images/contact.svg" alt="Фото або логотип для контактів" />
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

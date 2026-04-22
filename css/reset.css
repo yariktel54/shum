@@ -1,3 +1,20 @@
+:root {
+  --color-page-bg: #eff6e0;
+  --color-text: #ffffff;
+  --color-text-black: #000000;
+  --color-header-bg: #926ac4;
+  --color-project-card-bg: #92bfa3;
+  --color-project-cta-bg: #b1d4aa;
+  --color-placeholder-bg: #715bc9c7;
+  --color-team-bg: #c0a0e6;
+  --color-shadow: rgba(0, 0, 0, 1);
+  --color-mobile-button-bg: rgba(21, 25, 30, 0.08);
+  --color-mobile-divider: rgba(21, 25, 30, 0.12);
+  --color-mobile-menu-shadow: rgba(21, 25, 30, 0.16);
+  --color-scroll-thumb: #92bfa3;
+  --color-cta-border: rgba(21, 25, 30, 0.24);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,9 +22,9 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-  background: #9dada3;
-  color: #ffffff;
-  font-family: Roboto, Arial, sans-serif;
+  background: var(--color-page-bg);
+  color: var(--color-text);
+  font-family: "Oswald", Arial, sans-serif;
 }
 
 * {

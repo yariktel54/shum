@@ -26,7 +26,7 @@
   }
 
   .project-card {
-    width: min(1500px, calc(100vw - 180px));
+    width: min(1500px, calc(100vw - 183px));
     padding-right: 70px;
     padding-left: 90px;
   }
@@ -125,8 +125,8 @@
   }
 
   .projects {
-    padding-top: 120px;
-    padding-bottom: 80px;
+    padding-top: 130px;
+    padding-bottom: 0px;
   }
 
   .projects-box {
@@ -153,6 +153,10 @@
 
   .project-photo-top {
     height: 196px;
+  }
+
+  .project-photo-full {
+    height: 382px;
   }
 
   .project-photo-bottom {
@@ -198,7 +202,7 @@
 
   .team {
     padding-top: 130px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
   }
 
   .team-box {
@@ -250,8 +254,8 @@
   }
 
   .contacts {
-    padding-top: 120px;
-    padding-bottom: 110px;
+    padding-top: 130px;
+    padding-bottom: 0px;
   }
 
   .contacts-box {
@@ -312,7 +316,7 @@
     padding: 0;
     border: 0;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--color-mobile-button-bg);
     cursor: pointer;
     position: relative;
     flex: 0 0 auto;
@@ -323,8 +327,11 @@
     width: 22px;
     height: 2px;
     border-radius: 999px;
-    background: #ffffff;
-    transition: transform 0.25s ease, opacity 0.25s ease, top 0.25s ease;
+    background: var(--color-text);
+    transition:
+      transform 0.25s ease,
+      opacity 0.25s ease,
+      top 0.25s ease;
   }
 
   .burger-line-top {
@@ -363,13 +370,15 @@
     padding-right: 24px;
     padding-bottom: 24px;
     padding-left: 24px;
-    background: #273e20;
+    background: var(--color-header-bg);
     border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(16, 31, 13, 0.2);
+    box-shadow: 0 20px 40px var(--color-mobile-menu-shadow);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
-    transition: opacity 0.25s ease, transform 0.25s ease;
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
   }
 
   body.menu-open .mobile-menu {
@@ -389,7 +398,7 @@
     padding-right: 0;
     padding-bottom: 14px;
     padding-left: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid var(--color-mobile-divider);
     font-size: 24px;
     font-weight: 400;
     line-height: 1.1;
@@ -408,14 +417,14 @@
     align-items: center;
     justify-content: center;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--color-mobile-button-bg);
   }
 
   .mobile-social-link svg {
     width: 22px;
     height: 22px;
     fill: none;
-    stroke: #ffffff;
+    stroke: var(--color-text);
     stroke-width: 1.7;
   }
 
@@ -462,8 +471,8 @@
   }
 
   .projects {
-    padding-top: 76px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 0px;
   }
 
   .projects-box {
@@ -484,7 +493,7 @@
   }
 
   .project-card {
-    width: 82vw;
+    width: 83vw;
     min-height: auto;
     padding-top: 24px;
     padding-right: 20px;
@@ -499,6 +508,10 @@
 
   .project-photo-top {
     height: 180px;
+  }
+
+  .project-photo-full {
+    height: 360px;
   }
 
   .project-photo-bottom {
@@ -544,8 +557,8 @@
   }
 
   .team {
-    padding-top: 86px;
-    padding-bottom: 70px;
+    padding-top: 80px;
+    padding-bottom: 0px;
   }
 
   .team-box {
@@ -621,8 +634,8 @@
   }
 
   .contacts {
-    padding-top: 86px;
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 0px;
   }
 
   .contacts-box {
@@ -664,6 +677,10 @@
   .contacts-photo {
     height: 170px;
     align-self: start;
+  }
+
+  .contacts-callout-second {
+    margin-bottom: 20px;
   }
 }
 

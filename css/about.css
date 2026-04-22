@@ -28,6 +28,7 @@
   font-size: 60px;
   font-weight: 600;
   line-height: 1.08;
+  color: #000000;
 }
 
 .about-text {
@@ -36,8 +37,10 @@
   margin-bottom: 0;
   margin-left: 0;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.28;
+  color: #000000;
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); */
 }
 
 .about-visual {
@@ -50,7 +53,7 @@
   position: absolute;
   overflow: hidden;
   border-radius: 30px;
-  background: #d9d9d9;
+  background: var(--color-placeholder-bg);
 }
 
 .about-photo-left {
@@ -59,7 +62,7 @@
   width: 330px;
   height: 430px;
   transform: rotate(12deg);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: var(--color-shadow) 0px 5px 15px;
 }
 
 .about-photo-right {
@@ -68,5 +71,10 @@
   width: 330px;
   height: 430px;
   transform: rotate(-13deg);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: var(--color-shadow) 0px 5px 15px;
+}
+
+.about-title {
+  font-family: "Dela Gothic One", Arial, sans-serif;
+  font-weight: 500;
 }

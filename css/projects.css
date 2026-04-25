@@ -22,7 +22,6 @@
   color: #000000;
 }
 
-
 .projects-slider {
   position: relative;
 }
@@ -43,7 +42,10 @@
   color: var(--color-text-black);
   cursor: pointer;
   transform: translateY(-50%);
-  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    background 0.2s ease;
   z-index: 3;
 }
 
@@ -99,7 +101,7 @@
 }
 
 .project-card {
-  width: 1615px;
+  width: min(1615px, calc(100vw - 305px));
   max-width: 100%;
   min-height: 720px;
   padding-top: 77px;

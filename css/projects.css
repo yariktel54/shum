@@ -22,11 +22,69 @@
   color: #000000;
 }
 
+
+.projects-slider {
+  position: relative;
+}
+
+.project-arrow {
+  position: absolute;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-page-bg);
+  box-shadow: var(--color-shadow) 0px 5px 15px;
+  color: var(--color-text-black);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+  z-index: 3;
+}
+
+.project-arrow svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.project-arrow:hover {
+  transform: translateY(-50%) scale(1.04);
+}
+
+.project-arrow:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.project-arrow:disabled:hover {
+  transform: translateY(-50%);
+}
+
+.project-arrow-left {
+  left: 18px;
+}
+
+.project-arrow-right {
+  right: 18px;
+}
+
 .projects-scroll {
   overflow-x: auto;
+  scroll-behavior: smooth;
   overflow-y: hidden;
   padding-bottom: 14px;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   scrollbar-color: var(--color-scroll-thumb) transparent;
 }
 

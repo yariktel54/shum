@@ -25,8 +25,18 @@
     gap: 54px;
   }
 
+  .project-arrow {
+    width: 56px;
+    height: 56px;
+  }
+
+  .project-arrow svg {
+    width: 24px;
+    height: 24px;
+  }
+
   .project-card {
-    width: min(1500px, calc(100vw - 183px));
+    width: calc(100vw - 180px);
     padding-right: 70px;
     padding-left: 90px;
   }
@@ -122,6 +132,10 @@
   .about-photo-right {
     width: 220px;
     height: 300px;
+  }
+
+  .project-arrow {
+    display: none;
   }
 
   .projects {

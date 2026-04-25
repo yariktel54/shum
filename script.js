@@ -43,6 +43,79 @@ function setActiveLink(id) {
   });
 }
 
+function getProjectScrollStep(scroller) {
+  if (!scroller) {
+    return 0;
+  }
+
+  const firstCard = scroller.querySelector(".project-card");
+  const track = scroller.querySelector(".projects-track");
+
+  if (!firstCard) {
+    return scroller.clientWidth;
+  }
+
+  let gap = 0;
+
+  if (track) {
+    gap = parseFloat(window.getComputedStyle(track).columnGap || window.getComputedStyle(track).gap || "0");
+  }
+
+  return firstCard.getBoundingClientRect().width + gap;
+}
+
+function updateProjectArrowState(scroller, prevButton, nextButton) {
+  if (!scroller || !prevButton || !nextButton) {
+    return;
+  }
+
+  const maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
+  const currentScrollLeft = scroller.scrollLeft;
+
+  prevButton.disabled = currentScrollLeft <= 1;
+  nextButton.disabled = currentScrollLeft >= maxScrollLeft - 1;
+}
+
+function setupProjectSlider(slider) {
+  if (!slider) {
+    return;
+  }
+
+  const scroller = slider.querySelector("[data-project-scroll]");
+  const prevButton = slider.querySelector(".project-arrow-left");
+  const nextButton = slider.querySelector(".project-arrow-right");
+
+  if (!scroller || !prevButton || !nextButton) {
+    return;
+  }
+
+  function scrollProjects(direction) {
+    const step = getProjectScrollStep(scroller);
+    scroller.scrollBy({
+      left: step * direction,
+      behavior: "smooth",
+    });
+  }
+
+  prevButton.addEventListener("click", function () {
+    scrollProjects(-1);
+  });
+
+  nextButton.addEventListener("click", function () {
+    scrollProjects(1);
+  });
+
+  scroller.addEventListener("scroll", function () {
+    updateProjectArrowState(scroller, prevButton, nextButton);
+  });
+
+  window.addEventListener("resize", function () {
+    updateProjectArrowState(scroller, prevButton, nextButton);
+  });
+
+  updateProjectArrowState(scroller, prevButton, nextButton);
+}
+
 burger?.addEventListener("click", toggleMenu);
 
 document.addEventListener("click", function (event) {
@@ -104,64 +177,13 @@ const observer = new IntersectionObserver(
   {
     rootMargin: "-32% 0px -42% 0px",
     threshold: 0.12,
-  },
+  }
 );
 
 sections.forEach(function (section) {
   observer.observe(section);
 });
 
-const projectScrollers = document.querySelectorAll('[data-project-scroll]');
-
-function canScrollProjects(scroller) {
-  if (!scroller) {
-    return false;
-  }
-
-  return scroller.scrollWidth > scroller.clientWidth + 1;
-}
-
-function isAtProjectsStart(scroller) {
-  if (!scroller) {
-    return true;
-  }
-
-  return scroller.scrollLeft <= 1;
-}
-
-function isAtProjectsEnd(scroller) {
-  if (!scroller) {
-    return true;
-  }
-
-  const rightEdge = scroller.scrollLeft + scroller.clientWidth;
-  return rightEdge >= scroller.scrollWidth - 1;
-}
-
-function handleProjectsWheel(event) {
-  const scroller = event.currentTarget;
-
-  if (!canScrollProjects(scroller)) {
-    return;
-  }
-
-  if (Math.abs(event.deltaY) < Math.abs(event.deltaX)) {
-    return;
-  }
-
-  if (event.deltaY > 0 && isAtProjectsEnd(scroller)) {
-    return;
-  }
-
-  if (event.deltaY < 0 && isAtProjectsStart(scroller)) {
-    return;
-  }
-
-  event.preventDefault();
-  scroller.scrollLeft += event.deltaY;
-}
-
-projectScrollers.forEach(function (scroller) {
-  scroller.addEventListener('wheel', handleProjectsWheel, { passive: false });
+document.querySelectorAll(".projects-slider").forEach(function (slider) {
+  setupProjectSlider(slider);
 });
-

@@ -1,0 +1,60 @@
+{
+  "featured": ["pysanky", "together", "reuse"],
+  "groups": [
+    { "id": "events", "titleKey": "catalog.events.title", "textKey": "catalog.events.text" },
+    { "id": "community", "titleKey": "catalog.community.title", "textKey": "catalog.community.text" },
+    { "id": "initiatives", "titleKey": "catalog.initiatives.title", "textKey": "catalog.initiatives.text" }
+  ],
+  "projects": [
+    {
+      "id": "pysanky",
+      "group": "events",
+      "tag": { "ua": "Івент", "en": "Event" },
+      "image": "assets/images/project-1.png",
+      "title": { "ua": "Майстер-клас з автентичного писанкарства", "en": "Authentic Pysanka Workshop" },
+      "membersLabel": { "ua": "Учасники проєкту:", "en": "Project participants:" },
+      "members": { "ua": ["ПІБ, школа", "ПІБ, школа", "ПІБ, школа"], "en": ["Name, school", "Name, school", "Name, school"] },
+      "description": {
+        "ua": ["Майстер-клас з розпису писанок об’єднав коротку розповідь про традиції та практичну частину, де учасники створили власні роботи.", "Подія допомогла по-новому відчути сенси орнаментів і ближче познайомитися з цим ремеслом."],
+        "en": ["The pysanka workshop combined a brief introduction to tradition with a practical session where participants created their own pieces.", "The event helped them rediscover the meaning of ornaments and connect with the craft in a more personal way."]
+      }
+    },
+    { "id": "events_empty_1", "group": "events", "empty": true, "tag": { "ua": "", "en": "" }, "image": "assets/images/empty-project.svg", "title": { "ua": "", "en": "" }, "membersLabel": { "ua": "", "en": "" }, "members": { "ua": [], "en": [] }, "description": { "ua": [], "en": [] } },
+    { "id": "events_empty_2", "group": "events", "empty": true, "tag": { "ua": "", "en": "" }, "image": "assets/images/empty-project.svg", "title": { "ua": "", "en": "" }, "membersLabel": { "ua": "", "en": "" }, "members": { "ua": [], "en": [] }, "description": { "ua": [], "en": [] } },
+    { "id": "events_empty_3", "group": "events", "empty": true, "tag": { "ua": "", "en": "" }, "image": "assets/images/empty-project.svg", "title": { "ua": "", "en": "" }, "membersLabel": { "ua": "", "en": "" }, "members": { "ua": [], "en": [] }, "description": { "ua": [], "en": [] } },
+
+    {
+      "id": "together",
+      "group": "community",
+      "tag": { "ua": "Спільнота", "en": "Community" },
+      "image": "assets/images/project-top.svg",
+      "title": { "ua": "Ми разом", "en": "We Together" },
+      "membersLabel": { "ua": "Учасники проєкту:", "en": "Project participants:" },
+      "members": { "ua": ["Активісти учнівського самоврядування", "Координатори ШУМ"], "en": ["Student self-government leaders", "SHUM coordinators"] },
+      "description": {
+        "ua": ["«Ми разом» — це формат співпраці, у якому ШУМ залучає активні команди шкільного самоврядування до спільних подій і конкурсів.", "Проєкт підсилює горизонтальні зв’язки між школами та показує, що молодіжні ідеї можна реалізовувати не поодинці, а разом."],
+        "en": ["We Together is a collaborative format where SHUM engages active school self-government teams in shared events and contests.", "The project strengthens horizontal connections between schools and shows that youth ideas can be implemented together, not in isolation."]
+      }
+    },
+    { "id": "community_empty_1", "group": "community", "empty": true, "tag": { "ua": "", "en": "" }, "image": "assets/images/empty-project.svg", "title": { "ua": "", "en": "" }, "membersLabel": { "ua": "", "en": "" }, "members": { "ua": [], "en": [] }, "description": { "ua": [], "en": [] } },
+    { "id": "community_empty_2", "group": "community", "empty": true, "tag": { "ua": "", "en": "" }, "image": "assets/images/empty-project.svg", "title": { "ua": "", "en": "" }, "membersLabel": { "ua": "", "en": "" }, "members": { "ua": [], "en": [] }, "description": { "ua": [], "en": [] } },
+    { "id": "community_empty_3", "group": "community", "empty": true, "tag": { "ua": "", "en": "" }, "image": "assets/images/empty-project.svg", "title": { "ua": "", "en": "" }, "membersLabel": { "ua": "", "en": "" }, "members": { "ua": [], "en": [] }, "description": { "ua": [], "en": [] } },
+
+    {
+      "id": "reuse",
+      "group": "initiatives",
+      "tag": { "ua": "Еко", "en": "Eco" },
+      "image": "assets/images/project-bottom.svg",
+      "title": { "ua": "Реюз", "en": "Reuse" },
+      "membersLabel": { "ua": "Учасники проєкту:", "en": "Project participants:" },
+      "members": { "ua": ["Команда ШУМ", "Учні та партнери"], "en": ["SHUM team", "Students and partners"] },
+      "description": {
+        "ua": ["«Реюз» фокусується на повторному використанні матеріалів, екологічному мисленні та практичних форматах залучення молоді.", "Він показує, що екологічна тема може бути не моралізаторською, а сучасною, прикладною й цікавою для підлітків."],
+        "en": ["Reuse focuses on reusing materials, ecological thinking, and practical formats for youth engagement.", "It shows that environmental topics can be contemporary, practical, and genuinely interesting for teenagers instead of purely moralizing."]
+      }
+    },
+    { "id": "initiatives_empty_1", "group": "initiatives", "empty": true, "tag": { "ua": "", "en": "" }, "image": "assets/images/empty-project.svg", "title": { "ua": "", "en": "" }, "membersLabel": { "ua": "", "en": "" }, "members": { "ua": [], "en": [] }, "description": { "ua": [], "en": [] } },
+    { "id": "initiatives_empty_2", "group": "initiatives", "empty": true, "tag": { "ua": "", "en": "" }, "image": "assets/images/empty-project.svg", "title": { "ua": "", "en": "" }, "membersLabel": { "ua": "", "en": "" }, "members": { "ua": [], "en": [] }, "description": { "ua": [], "en": [] } },
+    { "id": "initiatives_empty_3", "group": "initiatives", "empty": true, "tag": { "ua": "", "en": "" }, "image": "assets/images/empty-project.svg", "title": { "ua": "", "en": "" }, "membersLabel": { "ua": "", "en": "" }, "members": { "ua": [], "en": [] }, "description": { "ua": [], "en": [] } }
+  ]
+}

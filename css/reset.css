@@ -1,30 +1,76 @@
 :root {
+  --font-scale: 1;
   --color-page-bg: #eff6e0;
-  --color-text: #ffffff;
-  --color-text-black: #000000;
   --color-header-bg: #926ac4;
+  --color-header-text: #ffffff;
+  --color-ink: #000000;
+  --color-muted-ink: rgba(0, 0, 0, 0.72);
   --color-project-card-bg: #92bfa3;
   --color-project-cta-bg: #b1d4aa;
-  --color-placeholder-bg: #715bc9c7;
   --color-team-bg: #c0a0e6;
-  --color-shadow: rgba(0, 0, 0, 1);
+  --color-placeholder-bg: #715bc9c7;
+  --color-panel-bg: rgba(255, 255, 255, 0.92);
+  --color-panel-border: rgba(0, 0, 0, 0.08);
+  --color-shadow: rgba(0, 0, 0, 0.22);
   --color-mobile-button-bg: rgba(21, 25, 30, 0.08);
   --color-mobile-divider: rgba(21, 25, 30, 0.12);
   --color-mobile-menu-shadow: rgba(21, 25, 30, 0.16);
   --color-scroll-thumb: #92bfa3;
   --color-cta-border: rgba(21, 25, 30, 0.24);
+  --color-focus: #111111;
+  --color-control-bg: rgba(255, 255, 255, 0.78);
+  --color-control-border: rgba(0, 0, 0, 0.1);
+  --color-control-text: #000000;
+  --color-link-chip-bg: rgba(0, 0, 0, 0.06);
+  --radius-xl: 30px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --font-heading: "Dela Gothic One", Arial, sans-serif;
+  --font-body: "Oswald", Arial, sans-serif;
+}
+
+body.theme-dark {
+  --color-page-bg: #14181b;
+  --color-header-bg: #1e2430;
+  --color-header-text: #f4f5f8;
+  --color-ink: #f4f5f8;
+  --color-muted-ink: rgba(244, 245, 248, 0.78);
+  --color-project-card-bg: #2e4a3c;
+  --color-project-cta-bg: #3b3157;
+  --color-team-bg: #3e2f54;
+  --color-placeholder-bg: #2a3137;
+  --color-panel-bg: rgba(23, 28, 33, 0.96);
+  --color-panel-border: rgba(255, 255, 255, 0.08);
+  --color-shadow: rgba(0, 0, 0, 0.45);
+  --color-mobile-button-bg: rgba(255, 255, 255, 0.1);
+  --color-mobile-divider: rgba(255, 255, 255, 0.14);
+  --color-mobile-menu-shadow: rgba(0, 0, 0, 0.4);
+  --color-scroll-thumb: rgba(255, 255, 255, 0.24);
+  --color-cta-border: rgba(255, 255, 255, 0.35);
+  --color-focus: #ffffff;
+  --color-control-bg: rgba(255, 255, 255, 0.08);
+  --color-control-border: rgba(255, 255, 255, 0.14);
+  --color-control-text: #f4f5f8;
+  --color-link-chip-bg: rgba(255, 255, 255, 0.08);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
   background: var(--color-page-bg);
-  color: var(--color-text);
-  font-family: "Oswald", Arial, sans-serif;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 * {
@@ -53,4 +99,58 @@ button {
 
 body.menu-open {
   overflow: hidden;
+}
+
+.skip-link {
+  position: absolute;
+  left: 20px;
+  top: -60px;
+  z-index: 200;
+  padding: 12px 18px;
+  background: var(--color-header-bg);
+  color: var(--color-header-text);
+  border-radius: 16px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 14px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.section-link-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: var(--color-link-chip-bg);
+  color: var(--color-ink);
+  font-size: calc(24px * var(--font-scale));
+  font-weight: 500;
+  line-height: 1;
+}
+
+.section-link-chip svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }

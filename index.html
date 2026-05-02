@@ -1,15 +1,12 @@
 <!doctype html>
 <html lang="uk">
   <head>
+    <title>ШУМ</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ШУМ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/about.css" />
@@ -18,120 +15,108 @@
     <link rel="stylesheet" href="css/contacts.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
-  <body>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content" data-i18n="skip.main">Перейти до основного вмісту</a>
     <header class="header">
       <div class="header-box">
-        <a class="logo" href="#about">Лого</a>
+        <a class="logo" data-lang-link="index.html" data-hash="about" href="index.html?lang=ua#about">Лого</a>
 
-        <nav class="nav desktop-nav" aria-label="Головне меню">
-          <a class="nav-link active-link" href="#about">Про нас</a>
-          <a class="nav-link" href="#projects">Наші проєкти</a>
-          <a class="nav-link" href="#team">Команда</a>
-          <a class="nav-link" href="#contacts">Контакти</a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a class="nav-link active-link" data-nav-key data-section="about" data-i18n="nav.about" data-lang-link="index.html" data-hash="about" href="index.html?lang=ua#about">Про нас</a>
+          <a class="nav-link" data-nav-key data-section="projects" data-i18n="nav.projects" data-lang-link="index.html" data-hash="projects" href="index.html?lang=ua#projects">Наші проєкти</a>
+          <a class="nav-link" data-nav-key data-section="team" data-i18n="nav.team" data-lang-link="index.html" data-hash="team" href="index.html?lang=ua#team">Команда</a>
+          <a class="nav-link" data-nav-key data-section="contacts" data-i18n="nav.contacts" data-lang-link="index.html" data-hash="contacts" href="index.html?lang=ua#contacts">Контакти</a>
         </nav>
 
-        <div class="social desktop-social" aria-label="Соціальні мережі">
-          <a
-            class="social-link"
-            href="https://instagram.com/shum"
-            aria-label="Instagram"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-              <circle cx="12" cy="12" r="4.2"></circle>
-              <circle cx="17.2" cy="6.8" r="1"></circle>
-            </svg>
-          </a>
-          <a
-            class="social-link"
-            href="https://facebook.com/shum"
-            aria-label="Facebook"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M13.3 20v-6.5h2.2l.4-2.7h-2.6V9.1c0-.8.3-1.4 1.4-1.4H16V5.4c-.4-.1-1.1-.2-2-.2-2.3 0-3.7 1.4-3.7 4v1.6H8v2.7h2.3V20h3Z"
-              ></path>
-            </svg>
-          </a>
-          <a class="social-link" href="https://t.me/shum" aria-label="Telegram">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M21 4L3.8 10.6c-.8.3-.8 1.5 0 1.8l4.4 1.5 1.6 5c.2.7 1.1.9 1.6.3l2.6-3.2 4.5 3.4c.7.5 1.6.1 1.8-.8L21 4Z"
-              ></path>
-              <path d="M8.4 13.9 18.9 6.6"></path>
-            </svg>
-          </a>
-        </div>
-
-        <button
-          class="burger"
-          type="button"
-          aria-label="Відкрити меню"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <span class="burger-line burger-line-top"></span>
-          <span class="burger-line burger-line-middle"></span>
-          <span class="burger-line burger-line-bottom"></span>
+        <button class="menu-toggle desktop-menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-menu-panel" data-menu-toggle>
+          <span class="menu-toggle-line menu-toggle-line-top"></span>
+          <span class="menu-toggle-line menu-toggle-line-middle"></span>
+          <span class="menu-toggle-line menu-toggle-line-bottom"></span>
         </button>
-      </div>
 
-      <div class="mobile-menu" id="mobile-menu">
-        <nav class="mobile-nav" aria-label="Мобільне меню">
-          <a class="mobile-link" href="#about">Про нас</a>
-          <a class="mobile-link" href="#projects">Наші проєкти</a>
-          <a class="mobile-link" href="#team">Команда</a>
-          <a class="mobile-link" href="#contacts">Контакти</a>
-        </nav>
+        <button class="menu-toggle mobile-menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-menu-panel" data-menu-toggle>
+          <span class="menu-toggle-line menu-toggle-line-top"></span>
+          <span class="menu-toggle-line menu-toggle-line-middle"></span>
+          <span class="menu-toggle-line menu-toggle-line-bottom"></span>
+        </button>
 
-        <div class="mobile-social" aria-label="Соціальні мережі">
-          <a
-            class="mobile-social-link"
-            href="https://instagram.com/shum"
-            aria-label="Instagram"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-              <circle cx="12" cy="12" r="4.2"></circle>
-              <circle cx="17.2" cy="6.8" r="1"></circle>
-            </svg>
-          </a>
-          <a
-            class="mobile-social-link"
-            href="https://facebook.com/shum"
-            aria-label="Facebook"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M13.3 20v-6.5h2.2l.4-2.7h-2.6V9.1c0-.8.3-1.4 1.4-1.4H16V5.4c-.4-.1-1.1-.2-2-.2-2.3 0-3.7 1.4-3.7 4v1.6H8v2.7h2.3V20h3Z"
-              ></path>
-            </svg>
-          </a>
-          <a
-            class="mobile-social-link"
-            href="https://t.me/shum"
-            aria-label="Telegram"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M21 4L3.8 10.6c-.8.3-.8 1.5 0 1.8l4.4 1.5 1.6 5c.2.7 1.1.9 1.6.3l2.6-3.2 4.5 3.4c.7.5 1.6.1 1.8-.8L21 4Z"
-              ></path>
-              <path d="M8.4 13.9 18.9 6.6"></path>
-            </svg>
-          </a>
+        <div class="utility-panel" id="site-menu-panel">
+          <div class="panel-nav">
+            <nav class="panel-nav-links" aria-label="Mobile navigation">
+              <a class="panel-nav-link" data-nav-key data-section="about" data-i18n="nav.about" data-lang-link="index.html" data-hash="about" href="index.html?lang=ua#about">Про нас</a>
+              <a class="panel-nav-link" data-nav-key data-section="projects" data-i18n="nav.projects" data-lang-link="index.html" data-hash="projects" href="index.html?lang=ua#projects">Наші проєкти</a>
+              <a class="panel-nav-link" data-nav-key data-section="team" data-i18n="nav.team" data-lang-link="index.html" data-hash="team" href="index.html?lang=ua#team">Команда</a>
+              <a class="panel-nav-link" data-nav-key data-section="contacts" data-i18n="nav.contacts" data-lang-link="index.html" data-hash="contacts" href="index.html?lang=ua#contacts">Контакти</a>
+            </nav>
+          </div>
+
+          <div class="panel-section">
+            <p class="panel-title" data-i18n="menu.social">Соцмережі</p>
+            <div class="panel-social">
+              <a class="panel-social-link" href="https://instagram.com/shum" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4.2"></circle>
+                  <circle cx="17.2" cy="6.8" r="1"></circle>
+                </svg>
+              </a>
+              <a class="panel-social-link" href="https://facebook.com/shum" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13.3 20v-6.5h2.2l.4-2.7h-2.6V9.1c0-.8.3-1.4 1.4-1.4H16V5.4c-.4-.1-1.1-.2-2-.2-2.3 0-3.7 1.4-3.7 4v1.6H8v2.7h2.3V20h3Z"></path>
+                </svg>
+              </a>
+              <a class="panel-social-link" href="https://t.me/shum" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 4L3.8 10.6c-.8.3-.8 1.5 0 1.8l4.4 1.5 1.6 5c.2.7 1.1.9 1.6.3l2.6-3.2 4.5 3.4c.7.5 1.6.1 1.8-.8L21 4Z"></path>
+                  <path d="M8.4 13.9 18.9 6.6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="panel-section">
+            <p class="panel-title" data-i18n="menu.accessibility">Інклюзія</p>
+            <div class="panel-controls">
+              <button class="toggle-chip" type="button" data-theme-toggle data-i18n="menu.darkMode">Темна тема</button>
+              <div class="font-tools-row">
+                <span class="panel-label" data-i18n="menu.textSize">Розмір тексту</span>
+                <div class="font-tools">
+                  <button class="font-button" type="button" data-font-step="-0.1" aria-label="Зменшити текст">A−</button>
+                  <span class="font-size-value" data-font-value>100%</span>
+                  <button class="font-button" type="button" data-font-step="0.1" aria-label="Збільшити текст">A+</button>
+                  <button class="font-button" type="button" data-font-reset aria-label="Скинути розмір тексту">↺</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-section">
+            <p class="panel-title" data-i18n="menu.language">Мова</p>
+            <div class="language-switch">
+              <button class="language-button is-active" type="button" data-lang-switch="ua">UA</button>
+              <button class="language-button" type="button" data-lang-switch="en">EN</button>
+            </div>
+          </div>
+
+          <div class="panel-section">
+            <a class="utility-link" data-lang-link="projects.html" href="projects.html?lang=ua">
+              <span data-i18n="menu.allProjects">Усі проєкти</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14"></path>
+                <path d="m13 6 6 6-6 6"></path>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </header>
 
-    <main class="page">
+    <main class="page" id="main-content">
       <section class="about" id="about">
         <div class="about-box">
           <div class="about-copy">
-            <h1 class="about-title">ШУМ — це невід’ємна частина молоді</h1>
-            <p class="about-text">
-              Коротко чим ми займаємось. Тут можна просто замінити текст на
-              реальний опис організації.
-            </p>
+            <h1 class="about-title" data-i18n="about.title">ШУМ — Голос молоді, яка не мовчить.</h1>
+            <p class="about-text" data-i18n="about.text">НайШУМніша спільнота міста. Об’єднуємо тих, хто хоче діяти й створювати щось своє. Ідеї тут стають реальністю.</p>
           </div>
 
           <div class="about-visual" aria-label="Фото організації">
@@ -140,7 +125,6 @@
             </div>
             <div class="about-photo about-photo-right">
               <img src="assets/images/about-1.png" alt="Фото організації 2" />
-              </div>
             </div>
           </div>
         </div>
@@ -148,7 +132,16 @@
 
       <section class="projects" id="projects">
         <div class="projects-box">
-          <h2 class="projects-title">Наші проєкти</h2>
+          <div class="projects-head">
+            <h2 class="projects-title" data-i18n="projects.title">Наші проєкти</h2>
+            <a class="section-link-chip" data-lang-link="projects.html" href="projects.html?lang=ua">
+              <span data-i18n="projects.more">Усі проєкти</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14"></path>
+                <path d="m13 6 6 6-6 6"></path>
+              </svg>
+            </a>
+          </div>
 
           <div class="projects-slider">
             <button class="project-arrow project-arrow-left" type="button" aria-label="Попередній проєкт">
@@ -162,100 +155,57 @@
                 <path d="M9.5 5.5 16 12l-6.5 6.5"></path>
               </svg>
             </button>
-            
+
             <div class="projects-scroll" data-project-scroll>
               <div class="projects-track">
-              <article class="project-card">
-                <div class="project-media">
-                  <a class="project-photo project-photo-full" href="#contacts">
-                    <img
-                      src="assets/images/project-1.png"
-                      alt="Фото проєкту 1"
-                    />
-                  </a>
-                </div>
+                <article class="project-card" data-project-id="pysanky">
+                  <div class="project-media">
+                    <a class="project-photo project-photo-full" data-project-link href="projects.html?lang=ua#project-pysanky">
+                      <img src="assets/images/project-1.png" alt="Фото проєкту 1" />
+                    </a>
+                  </div>
+                  <div class="project-copy">
+                    <a class="project-link" data-project-title data-project-link href="projects.html?lang=ua#project-pysanky"></a>
+                    <p class="project-lead" data-project-lead></p>
+                    <p class="project-members" data-project-members></p>
+                    <p class="project-text" data-project-text></p>
+                  </div>
+                </article>
 
-                <div class="project-copy">
-                  <a class="project-link" href="#contacts"
-                    >Майстер-клас з автентичного писанкарства</a
-                  >
-                  <p class="project-lead">Учасники проєкту:</p>
-                  <p class="project-members">
-                    ПІБ, школа<br />ПІБ, школа<br />ПІБ, школа
-                  </p>
-                  <p class="project-text">
-                    Майстер-клас з розпису писанок об’єднав коротку розповідь
-                    про традиції та практичну частину, де учасники створили
-                    власні роботи. Подія допомогла по-новому відчути сенси
-                    орнаментів і ближче познайомитися з цим ремеслом.
-                  </p>
-                </div>
-              </article>
+                <article class="project-card" data-project-id="together">
+                  <div class="project-media">
+                    <a class="project-photo project-photo-top" data-project-link href="projects.html?lang=ua#project-together">
+                      <img src="assets/images/project-top.svg" alt="Фото проєкту 2" />
+                    </a>
+                    <a class="project-photo project-photo-bottom" data-project-link href="projects.html?lang=ua#project-together">
+                      <img src="assets/images/project-bottom.svg" alt="Фото проєкту 3" />
+                    </a>
+                  </div>
+                  <div class="project-copy">
+                    <a class="project-link" data-project-title data-project-link href="projects.html?lang=ua#project-together"></a>
+                    <p class="project-lead" data-project-lead></p>
+                    <p class="project-members" data-project-members></p>
+                    <p class="project-text" data-project-text></p>
+                  </div>
+                </article>
 
-              <article class="project-card">
-                <div class="project-media">
-                  <a class="project-photo project-photo-top" href="#contacts">
-                    <img
-                      src="assets/images/project-top.svg"
-                      alt="Фото проєкту 3"
-                    />
-                  </a>
-                  <a
-                    class="project-photo project-photo-bottom"
-                    href="#contacts"
-                  >
-                    <img
-                      src="assets/images/project-bottom.svg"
-                      alt="Фото проєкту 4"
-                    />
-                  </a>
-                </div>
-
-                <div class="project-copy">
-                  <a class="project-link" href="#contacts">Ще один проєкт</a>
-                  <p class="project-lead">Учасники проєкту:</p>
-                  <p class="project-members">
-                    ПІБ, школа<br />ПІБ, школа<br />ПІБ, школа
-                  </p>
-                  <p class="project-text">Опис</p>
-                </div>
-              </article>
-
-              <article class="project-card">
-                <div class="project-media">
-                  <a class="project-photo project-photo-top" href="#contacts">
-                    <img
-                      src="assets/images/project-top.svg"
-                      alt="Фото проєкту 5"
-                    />
-                  </a>
-                  <a
-                    class="project-photo project-photo-bottom"
-                    href="#contacts"
-                  >
-                    <img
-                      src="assets/images/project-bottom.svg"
-                      alt="Фото проєкту 6"
-                    />
-                  </a>
-                </div>
-
-                <div class="project-copy">
-                  <a class="project-link" href="#contacts">Майбутній проєкт</a>
-                  <p class="project-lead">Учасники проєкту:</p>
-                  <p class="project-members">
-                    ПІБ, школа<br />ПІБ, школа<br />ПІБ, школа
-                  </p>
-                  <p class="project-text">Опис</p>
-                </div>
-              </article>
-
-              <!--<article class="project-card project-card-cta">
-                <a class="project-cta-link" href="#contacts">
-                  <span class="project-cta-title">Хочеш взяти участь?</span>
-                  <span class="project-cta-text">Натискай і напиши нам</span>
-                </a>
-              </article>-->
+                <article class="project-card" data-project-id="reuse">
+                  <div class="project-media">
+                    <a class="project-photo project-photo-top" data-project-link href="projects.html?lang=ua#project-reuse">
+                      <img src="assets/images/project-top.svg" alt="Фото проєкту 4" />
+                    </a>
+                    <a class="project-photo project-photo-bottom" data-project-link href="projects.html?lang=ua#project-reuse">
+                      <img src="assets/images/project-bottom.svg" alt="Фото проєкту 5" />
+                    </a>
+                  </div>
+                  <div class="project-copy">
+                    <a class="project-link" data-project-title data-project-link href="projects.html?lang=ua#project-reuse"></a>
+                    <p class="project-lead" data-project-lead></p>
+                    <p class="project-members" data-project-members></p>
+                    <p class="project-text" data-project-text></p>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
@@ -263,17 +213,16 @@
 
       <section class="team" id="team">
         <div class="team-box">
-          <h2 class="team-title">Команда</h2>
+          <h2 class="team-title" data-i18n="team.title">Команда</h2>
           <div class="team-grid">
             <article class="team-person">
               <div class="team-person-photo">
                 <img src="assets/images/president.svg" alt="Фото президента" />
               </div>
-
               <div class="team-person-copy">
-                <p class="team-role">Президент</p>
-                <h3 class="team-name">ПІБ</h3>
-                <p class="team-text">Короткий опис про людину.</p>
+                <p class="team-role" data-i18n="team.role.president">Президент</p>
+                <h3 class="team-name" data-i18n="team.name.president">ПІБ</h3>
+                <p class="team-text" data-i18n="team.text.president">Короткий опис про людину.</p>
               </div>
             </article>
 
@@ -281,34 +230,21 @@
               <div class="team-person-photo">
                 <img src="assets/images/methodist.png" alt="Фото методиста" />
               </div>
-
               <div class="team-person-copy">
-                <p class="team-role">Методист</p>
-                <h3 class="team-name">Москалець Владислав Павлович</h3>
-                <p class="team-text">
-                  Класний чувак, методист, психолог і джентельмен.
-                </p>
+                <p class="team-role" data-i18n="team.role.methodist">Методист</p>
+                <h3 class="team-name" data-i18n="team.name.methodist">Москалець Владислав Павлович</h3>
+                <p class="team-text" data-i18n="team.text.methodist">Класний чувак, методист, психолог і джентельмен.</p>
               </div>
             </article>
 
             <article class="team-wide">
               <div class="team-wide-photo">
-                <img
-                  src="assets/images/team-photo.png"
-                  alt="Загальне фото команди"
-                />
+                <img src="assets/images/team-photo.png" alt="Загальне фото команди" />
               </div>
-
               <div class="team-wide-copy">
-                <p class="team-role">Команда ШУМ</p>
-                <h3 class="team-wide-name">
-                  У ШУМ входять активні молоді люди, зокрема представники
-                  шкільних самоврядувань
-                </h3>
-                <p class="team-wide-text">
-                  Але для вступу взагалі не обов'язково бути президентом школи
-                  чи помічником. Достатньо мати ентузіазм і бажання)
-                </p>
+                <p class="team-role" data-i18n="team.role.group">Команда ШУМ</p>
+                <h3 class="team-wide-name" data-i18n="team.name.group">У ШУМ входять активні молоді люди, зокрема представники шкільних самоврядувань</h3>
+                <p class="team-wide-text" data-i18n="team.text.group">Але для вступу взагалі не обов'язково бути президентом школи чи помічником. Достатньо мати ентузіазм і бажання.</p>
               </div>
             </article>
           </div>
@@ -317,65 +253,47 @@
 
       <section class="contacts" id="contacts">
         <div class="contacts-box">
-          <h2 class="contacts-title">Зв’яжіться з нами</h2>
+          <h2 class="contacts-title" data-i18n="contacts.title">Зв’яжіться з нами</h2>
 
           <div class="contacts-panel">
             <div class="contacts-copy">
               <div class="contacts-callout">
-                <p class="contact-line contact-label">Хочете до нас?</p>
-                <p class="contact-line">
-                  Долучайся до нашої спільноти у Telegram!
-                </p>
+                <p class="contact-line contact-label" data-i18n="contacts.callout.one.title">Хочете до нас?</p>
+                <p class="contacts-callout-text" data-i18n="contacts.callout.one.text">Долучайся до нашої спільноти у Telegram!</p>
               </div>
 
               <div class="contacts-callout contacts-callout-second">
-                <p class="contact-line contact-label">
-                  Хочете щось зробити разом або проспонсорувати?
-                </p>
-                <p class="contact-line">
-                  Ми завжди відкриті для взаємовигідної співпраці і спільних
-                  проєктів або подій.
-                </p>
+                <p class="contact-line contact-label" data-i18n="contacts.callout.two.title">Хочете щось зробити разом або проспонсорувати?</p>
+                <p class="contacts-callout-text" data-i18n="contacts.callout.two.text">Ми завжди відкриті для взаємовигідної співпраці і спільних проєктів або подій.</p>
               </div>
 
               <div class="contacts-list">
                 <p class="contact-line">
-                  <span class="contact-label">Insta:</span>
-                  <a class="contact-link" href="https://instagram.com/shum"
-                    >@shum</a
-                  >
+                  <span class="contact-label" data-i18n="contacts.insta">Insta:</span>
+                  <a class="contact-link" href="https://instagram.com/shum">@shum</a>
                 </p>
                 <p class="contact-line">
-                  <span class="contact-label">Facebook:</span>
-                  <a class="contact-link" href="https://facebook.com/shum"
-                    >@shum</a
-                  >
+                  <span class="contact-label" data-i18n="contacts.facebook">Facebook:</span>
+                  <a class="contact-link" href="https://facebook.com/shum">@shum</a>
                 </p>
                 <p class="contact-line">
-                  <span class="contact-label">Telegram:</span>
+                  <span class="contact-label" data-i18n="contacts.telegram">Telegram:</span>
                   <a class="contact-link" href="https://t.me/shum">@shum</a>
                 </p>
                 <p class="contact-line">
-                  <span class="contact-label">Пошта:</span>
-                  <a class="contact-link" href="mailto:shum123@gmail.com"
-                    >shum123@gmail.com</a
-                  >
+                  <span class="contact-label" data-i18n="contacts.email">Пошта:</span>
+                  <a class="contact-link" href="mailto:shum123@gmail.com">shum123@gmail.com</a>
                 </p>
                 <p class="contact-line">
-                  <span class="contact-label">Номер телефону:</span>
-                  <a class="contact-link" href="tel:+380000000000"
-                    >+380ххххххххх</a
-                  >
+                  <span class="contact-label" data-i18n="contacts.phone">Номер телефону:</span>
+                  <a class="contact-link" href="tel:+380665125273">+380665125273</a>
                 </p>
-                <p class="contact-person">Михайло Михайлович Михайличенко</p>
+                <p class="contact-person" data-i18n="contacts.person">Михайло Михайлович Михайличенко</p>
               </div>
             </div>
 
             <div class="contacts-photo">
-              <img
-                src="assets/images/contact.png"
-                alt="Фото або логотип для контактів"
-              />
+              <img src="assets/images/contact.png" alt="Фото для контактів" />
             </div>
           </div>
         </div>

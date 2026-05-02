@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <title>ШУМ — Усі проєкти</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-page="projects">
+    <a class="skip-link" href="#main-content" data-i18n="skip.main">Перейти до основного вмісту</a>
+    <header class="header">
+      <div class="header-box">
+        <a class="logo" data-lang-link="index.html" data-hash="about" href="index.html?lang=ua#about">Лого</a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a class="nav-link" data-nav-key data-section="about" data-i18n="nav.about" data-lang-link="index.html" data-hash="about" href="index.html?lang=ua#about">Про нас</a>
+          <a class="nav-link active-link" data-nav-key data-section="projects" data-i18n="nav.projects" data-lang-link="projects.html" href="projects.html?lang=ua">Наші проєкти</a>
+          <a class="nav-link" data-nav-key data-section="team" data-i18n="nav.team" data-lang-link="index.html" data-hash="team" href="index.html?lang=ua#team">Команда</a>
+          <a class="nav-link" data-nav-key data-section="contacts" data-i18n="nav.contacts" data-lang-link="index.html" data-hash="contacts" href="index.html?lang=ua#contacts">Контакти</a>
+        </nav>
+
+        <button class="menu-toggle desktop-menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-menu-panel" data-menu-toggle>
+          <span class="menu-toggle-line menu-toggle-line-top"></span>
+          <span class="menu-toggle-line menu-toggle-line-middle"></span>
+          <span class="menu-toggle-line menu-toggle-line-bottom"></span>
+        </button>
+
+        <button class="menu-toggle mobile-menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-menu-panel" data-menu-toggle>
+          <span class="menu-toggle-line menu-toggle-line-top"></span>
+          <span class="menu-toggle-line menu-toggle-line-middle"></span>
+          <span class="menu-toggle-line menu-toggle-line-bottom"></span>
+        </button>
+
+        <div class="utility-panel" id="site-menu-panel">
+          <div class="panel-nav">
+            <nav class="panel-nav-links" aria-label="Mobile navigation">
+              <a class="panel-nav-link" data-nav-key data-section="about" data-i18n="nav.about" data-lang-link="index.html" data-hash="about" href="index.html?lang=ua#about">Про нас</a>
+              <a class="panel-nav-link active-link" data-nav-key data-section="projects" data-i18n="nav.projects" data-lang-link="projects.html" href="projects.html?lang=ua">Наші проєкти</a>
+              <a class="panel-nav-link" data-nav-key data-section="team" data-i18n="nav.team" data-lang-link="index.html" data-hash="team" href="index.html?lang=ua#team">Команда</a>
+              <a class="panel-nav-link" data-nav-key data-section="contacts" data-i18n="nav.contacts" data-lang-link="index.html" data-hash="contacts" href="index.html?lang=ua#contacts">Контакти</a>
+            </nav>
+          </div>
+
+          <div class="panel-section">
+            <p class="panel-title" data-i18n="menu.social">Соцмережі</p>
+            <div class="panel-social">
+              <a class="panel-social-link" href="https://instagram.com/shum" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4.2"></circle>
+                  <circle cx="17.2" cy="6.8" r="1"></circle>
+                </svg>
+              </a>
+              <a class="panel-social-link" href="https://facebook.com/shum" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13.3 20v-6.5h2.2l.4-2.7h-2.6V9.1c0-.8.3-1.4 1.4-1.4H16V5.4c-.4-.1-1.1-.2-2-.2-2.3 0-3.7 1.4-3.7 4v1.6H8v2.7h2.3V20h3Z"></path>
+                </svg>
+              </a>
+              <a class="panel-social-link" href="https://t.me/shum" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 4L3.8 10.6c-.8.3-.8 1.5 0 1.8l4.4 1.5 1.6 5c.2.7 1.1.9 1.6.3l2.6-3.2 4.5 3.4c.7.5 1.6.1 1.8-.8L21 4Z"></path>
+                  <path d="M8.4 13.9 18.9 6.6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="panel-section">
+            <p class="panel-title" data-i18n="menu.accessibility">Інклюзія</p>
+            <div class="panel-controls">
+              <button class="toggle-chip" type="button" data-theme-toggle data-i18n="menu.darkMode">Темна тема</button>
+              <div class="font-tools-row">
+                <span class="panel-label" data-i18n="menu.textSize">Розмір тексту</span>
+                <div class="font-tools">
+                  <button class="font-button" type="button" data-font-step="-0.1" aria-label="Зменшити текст">A−</button>
+                  <span class="font-size-value" data-font-value>100%</span>
+                  <button class="font-button" type="button" data-font-step="0.1" aria-label="Збільшити текст">A+</button>
+                  <button class="font-button" type="button" data-font-reset aria-label="Скинути розмір тексту">↺</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-section">
+            <p class="panel-title" data-i18n="menu.language">Мова</p>
+            <div class="language-switch">
+              <button class="language-button is-active" type="button" data-lang-switch="ua">UA</button>
+              <button class="language-button" type="button" data-lang-switch="en">EN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="catalog-page" id="main-content">
+      <div class="catalog-box">
+        <section class="catalog-hero">
+          <h1 class="catalog-page-title" data-i18n="catalog.title">Усі проєкти</h1>
+          <p class="catalog-page-text" data-i18n="catalog.text">На головній — коротка добірка головних проєктів, а тут можна побачити напрямки ширше. Категорії допомагають не перетворювати сторінку на хаотичну стрічку карток.</p>
+        </section>
+
+        <section class="catalog-group">
+          <div class="catalog-group-head">
+            <h2 class="catalog-group-title" data-i18n="catalog.events.title">Івенти</h2>
+            <p class="catalog-group-text" data-i18n="catalog.events.text">Фізичні події, майстер-класи та зустрічі, де можна долучитися наживо.</p>
+          </div>
+          <div class="catalog-grid" data-catalog-group="events"></div>
+        </section>
+
+        <section class="catalog-group">
+          <div class="catalog-group-head">
+            <h2 class="catalog-group-title" data-i18n="catalog.community.title">Спільнота та партнерства</h2>
+            <p class="catalog-group-text" data-i18n="catalog.community.text">Проєкти, які об’єднують школи, команди та партнерів навколо спільної ідеї.</p>
+          </div>
+          <div class="catalog-grid" data-catalog-group="community"></div>
+        </section>
+
+        <section class="catalog-group">
+          <div class="catalog-group-head">
+            <h2 class="catalog-group-title" data-i18n="catalog.initiatives.title">Ініціативи</h2>
+            <p class="catalog-group-text" data-i18n="catalog.initiatives.text">Теми, які можуть виростати в серії подій, кампаній або внутрішніх форматів.</p>
+          </div>
+          <div class="catalog-grid" data-catalog-group="initiatives"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

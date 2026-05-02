@@ -1,6 +1,5 @@
 .projects {
   padding-top: 150px;
-  /* padding-bottom: 95px; */
 }
 
 .projects-box {
@@ -10,16 +9,21 @@
   margin-left: auto;
 }
 
-.projects-title {
-  margin-top: 0;
-  margin-right: 0;
+.projects-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
   margin-bottom: 50px;
-  margin-left: 0;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 600;
+}
+
+.projects-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: calc(60px * var(--font-scale));
+  font-weight: 500;
   line-height: 1.08;
-  color: #000000;
+  color: var(--color-ink);
 }
 
 .projects-slider {
@@ -37,15 +41,12 @@
   padding: 0;
   border: 0;
   border-radius: 999px;
-  background: var(--color-page-bg);
+  background: var(--color-panel-bg);
   box-shadow: var(--color-shadow) 0px 5px 15px;
-  color: var(--color-text-black);
+  color: var(--color-ink);
   cursor: pointer;
   transform: translateY(-50%);
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease,
-    background 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
   z-index: 3;
 }
 
@@ -104,15 +105,11 @@
   width: min(1615px, calc(100vw - 305px));
   max-width: 100%;
   min-height: 720px;
-  padding-top: 77px;
-  padding-right: 90px;
-  padding-bottom: 77px;
-  padding-left: 136px;
+  padding: 77px 90px 77px 136px;
   display: flex;
   align-items: stretch;
   background: var(--color-project-card-bg);
-  border-radius: 30px;
-  scroll-snap-align: start;
+  border-radius: var(--radius-xl);
   flex: 0 0 auto;
 }
 
@@ -130,22 +127,20 @@
   background: var(--color-placeholder-bg);
 }
 
-.project-photo-top {
-  height: 283px;
-  border-radius: 30px;
+.project-photo-top,
+.project-photo-bottom,
+.project-photo-full {
+  border-radius: var(--radius-xl);
   box-shadow: var(--color-shadow) 0px 5px 15px;
+}
+
+.project-photo-top,
+.project-photo-bottom {
+  height: 283px;
 }
 
 .project-photo-full {
   height: 566px;
-  border-radius: 30px;
-  box-shadow: var(--color-shadow) 0px 5px 15px;
-}
-
-.project-photo-bottom {
-  height: 283px;
-  border-radius: 30px;
-  box-shadow: var(--color-shadow) 0px 5px 15px;
 }
 
 .project-copy {
@@ -155,96 +150,51 @@
 
 .project-link {
   display: inline-block;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 50px;
-  margin-left: 0;
-  font-size: 60px;
-  font-weight: 600;
+  margin: 0 0 50px;
+  font-family: var(--font-heading);
+  font-size: calc(60px * var(--font-scale));
+  font-weight: 500;
   line-height: 1.08;
+  color: var(--color-ink);
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
 }
 
 .project-lead {
+  margin: 0 0 10px;
+  font-size: calc(40px * var(--font-scale));
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+.project-members {
+  margin: 0 0 50px;
+  font-size: calc(40px * var(--font-scale));
+  font-weight: 500;
+  line-height: 1.32;
+  color: var(--color-ink);
+}
+
+.project-text {
+  margin: 0;
+  font-size: calc(40px * var(--font-scale));
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--color-ink);
+}
+
+.project-member-line {
+  display: block;
+}
+
+.project-text-line {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 10px;
   margin-left: 0;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.2;
 }
 
-.project-members {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 50px;
-  margin-left: 0;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.32;
-}
-
-.project-text {
-  margin-top: 0;
-  margin-right: 0;
+.project-text-line:last-child {
   margin-bottom: 0;
-  margin-left: 0;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.3;
-}
-
-.project-card-cta {
-  width: 560px;
-  padding-top: 77px;
-  padding-right: 70px;
-  padding-bottom: 77px;
-  padding-left: 70px;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-project-cta-bg);
-}
-
-.project-cta-link {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 30px;
-  border: 2px dashed var(--color-cta-border);
-}
-
-.project-cta-title {
-  display: block;
-  margin-bottom: 26px;
-  font-size: 44px;
-  font-weight: 600;
-  line-height: 1.1;
-}
-
-.project-cta-text {
-  display: block;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.projects-title {
-  font-family: "Dela Gothic One", Arial, sans-serif;
-  font-weight: 500;
-}
-
-.project-link {
-  font-family: "Dela Gothic One", Arial, sans-serif;
-  font-weight: 500;
-}
-
-.project-cta-title {
-  font-family: "Dela Gothic One", Arial, sans-serif;
-  font-weight: 500;
 }
